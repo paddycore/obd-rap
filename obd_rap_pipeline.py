@@ -3,7 +3,7 @@ OBD-RAP experiment pipeline for HuggingFace LLaMA-family models.
 
 Same procedure as V5.ipynb (covariances -> adaptive budget -> pair pruning ->
 OBS -> Q/O absorption -> attention-scale fix -> non-contiguous RoPE), plus the
-iterative variant from the slides, as functions driven by one RunConfig.
+iterative variant, as functions driven by one RunConfig.
 
 Baselines run in the same setting (same model, calibration, protected layers,
 KV-cache ratio and evaluation):
@@ -558,7 +558,7 @@ def run_compression(model, cfg: RunConfig, dense_cov: dict, calib, log=print, fi
 @torch.no_grad()
 def perplexity(model, tokens: torch.Tensor, seq_len: int, n_seqs: Optional[int] = None) -> float:
     """exp of the mean window loss over non-overlapping windows.
-    V5/slides: seq_len=512, n_seqs=20. Standard: seq_len=2048, all windows."""
+    Short protocol: seq_len=512, n_seqs=20. Standard: seq_len=2048, all windows."""
     dev = _device(model)
     n = tokens.numel() // seq_len
     n = min(n, n_seqs) if n_seqs else n

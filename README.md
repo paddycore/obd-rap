@@ -61,15 +61,6 @@ Before timing, each variant is checked against plain attention with equivalent d
 
 ## Current status
 
-**Reproduction.** The class-slide numbers reproduce, and come out slightly better on the slide protocol:
-
-| KV reduction | This run (ppl_v5) | Slides |
-|---|---|---|
-| 10% | 8.70 | 9.07 |
-| 20% | 9.95 | 10.22 |
-| 30% | 16.0 | 20.71 |
-| 40% | 71.1 | 81.78 |
-
 **What holds up**
 - At 10–30% KV reduction, OBD-RAP has 30–40% lower perplexity than RAP without KD.
 - At 20%, its average accuracy is 9.6 points higher than RAP.
