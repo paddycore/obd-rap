@@ -1,0 +1,13 @@
+method,name,ratio,ppl_v5,ppl_std2048,kv_cache_red,params_red
+"OBD-LLM (K/V low-rank, 32 groups)",rho10_obdllm_kv_g32,0.1,8.057,5.567,9.9,1.2
+"OBD-LLM (K/V low-rank, 32 groups)",rho20_obdllm_kv_g32,0.2,8.336,5.728,19.8,2.8
+"OBD-LLM (K/V low-rank, 32 groups)",rho30_obdllm_kv_g32,0.3,8.797,6.051,30.3,4.6
+"OBD-LLM (K/V low-rank, 32 groups)",rho40_obdllm_kv_g32,0.4,9.570,6.679,40.2,6.2
+"OBD-LLM (K/V low-rank, 8 groups)",rho10_obdllm_kv_g8,0.1,8.026,5.534,10.1,0.1
+"OBD-LLM (K/V low-rank, 8 groups)",rho20_obdllm_kv_g8,0.2,8.181,5.628,19.9,1.9
+"OBD-LLM (K/V low-rank, 8 groups)",rho30_obdllm_kv_g8,0.3,8.437,5.818,30.0,3.7
+"OBD-LLM (K/V low-rank, 8 groups)",rho40_obdllm_kv_g8,0.4,8.948,6.219,40.0,5.5
+"OBD-RAP (iterative x3, align 4)",rho10_iter3_obd_bar_a4,0.1,8.995,6.265,15.8,5.0
+"OBD-RAP (iterative x3, align 4)",rho20_iter3_obd_bar_a4,0.2,8.993,6.266,15.8,5.0
+"OBD-RAP (iterative x3, align 4)",rho30_iter3_obd_bar_a4,0.3,21.207,26.286,31.6,10.1
+"OBD-RAP (iterative x3, align 4)",rho40_iter3_obd_bar_a4,0.4,97.693,142.056,42.2,13.4
